@@ -1,25 +1,23 @@
 'use client';
 
-import z, { string } from 'zod';
+import z from 'zod';
 import axios from 'axios';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
-import { MessageSquare } from 'lucide-react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Heading } from '@/components/Heading';
 import { cn } from '@/lib/utils';
 import { formSchema } from './constants';
-
 import { Empty } from '@/components/Empty';
-
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem } from '@/components/ui/form';
 import { Loader } from '@/components/Loader';
 import { UserAvatar } from '@/components/User-avatar';
 import { BotAvatar } from '@/components/Bot-avatar';
+import { MessageSquare } from 'lucide-react';
 
 export default function ConversationPage() {
   const router = useRouter();
@@ -75,7 +73,7 @@ export default function ConversationPage() {
 
       // Reset form input
       form.reset();
-    } catch (error) {
+    } catch (error: any) {
       
       if (error?.response?.status === 401) {
         toast.error('Unauthorized. Please log in.');
@@ -100,7 +98,7 @@ export default function ConversationPage() {
         icon={MessageSquare}
         bgColor="bg-violet-500/10"
         iconColor="text-violet-500"
-        description="Our most advanced conversation model."
+        discription="Our most advanced conversation model."
       />
 
       <div className="px-4 lg:px-8">
