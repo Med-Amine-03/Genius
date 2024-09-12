@@ -36,12 +36,7 @@ const routes =[
         color:"text-pink-700"
     },
     
-    {
-        lable:"Setting",
-        icon:Settings,
-        href:"/setting",
-        
-    },
+  
 ]
 
 

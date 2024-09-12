@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    
     "start": "next start",
     "lint": "next lint",
     "build": "next build",
@@ -30,7 +29,7 @@
     "joi": "^17.13.3",
     "lru-cache": "^11.0.0",
     "lucide-react": "^0.424.0",
-    "next": "14.2.5",
+    "next": "^14.2.7",
     "openai": "^4.55.1",
     "react": "^18",
     "react-dom": "^18",
@@ -40,12 +39,14 @@
     "replicate": "^0.32.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
+    "typewriter-effect": "^2.21.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cypress": "^13.14.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
