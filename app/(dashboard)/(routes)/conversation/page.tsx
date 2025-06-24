@@ -21,9 +21,13 @@ import { MessageSquare } from 'lucide-react';
 
 export default function ConversationPage() {
   const router = useRouter();
+type Message = {
+  role: 'user' | 'assistant';
+  content: string;
+};
 
   
-  const [messages, setMessages] = useState([]);
+const [messages, setMessages] = useState<Message[]>([]);
 
  
   const form = useForm({
@@ -45,7 +49,7 @@ export default function ConversationPage() {
 
     try {
       
-      const userMessage = {
+      const userMessage :Message = {
         role: 'user',
         content: values.prompt,
       };
