@@ -94,7 +94,7 @@ export default function CodePage() {
         icon={Code}
         bgColor="bg-green-700/10"
         iconColor="text-green-700"
-        description="Generate code using this tool."
+        discription="Generate code using this tool."
       />
 
       <div className="px-4 lg:px-8">

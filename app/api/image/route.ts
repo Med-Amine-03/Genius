@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     
     const form = new FormData();
     form.append('prompt', prompt);
-    form.append('style_id', `33:${randomStyleId.toString()}`); // Example style_id
+    form.append('style_id', `33:${randomStyleId.toString()}`); 
     console.log(randomStyleId)
     
     const response = await axios.post(
