@@ -2,6 +2,8 @@
 
 A Next.js SaaS app with several AI tools behind user accounts: a conversational assistant, code generation and image generation.
 
+> Built following [Code With Antonio](https://www.youtube.com/@codewithantonio)'s AI SaaS tutorial, then extended with Groq as an additional LLM provider.
+
 ## Features
 
 | Tool | Route |
